@@ -1,0 +1,10 @@
+.greetingblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto;
+    width: 50rem;
+    background-color: grey;
+    opacity: 60%;
+    border-radius: 1rem;
+}

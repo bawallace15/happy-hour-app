@@ -4,6 +4,78 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: url("miami.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.nav_header {
+  width: 100%;
+  margin: 0 0;
+  font-family: 'Garamond';
+  font-variant: small-caps;
+  color: #444;
+  border-bottom: solid;
+  border-color: black;
+  border-width: 1px;
+  background-color: white;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.nav_header h1 {
+  margin-left: 1rem;
+}
+
+nav {
+  float: right
+}
+
+nav ul {
+  margin: 0 1rem 0 0;
+  padding: 0px;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+  
+nav a:hover::before {
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
 a {
