@@ -1,6 +1,6 @@
-import styles from './layout.module.css'
-import Navigation from './navigation'
-// import pic from '../public/miami.jpg'
+import styles from './layout.module.css';
+import Navigation from './navigation';
+import Link from 'next/link'; 
 
 export const siteTitle = 'Miami Happy Hour Finder'
 

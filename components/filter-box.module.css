@@ -22,8 +22,23 @@
 }
 
 .selector {
-    width: 10rem;
+    width: 12rem;
     margin: 0 5rem;
+}
+
+.submit_btn {
+    background-color: blue;
+}
+
+.timebox {
+    width: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.time_selector {
+    width: 5rem;
 }
 
 .parent_card {
