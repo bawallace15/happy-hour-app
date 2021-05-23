@@ -47,24 +47,6 @@ class Home extends Component {
           })
         }
       )
-    fetch('http://localhost:3001/days')
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            days: result
-          })
-        }
-      )
-    fetch('http://localhost:3001/hours')
-      .then(res => res.json())
-      .then(
-        (result) => {
-          this.setState({
-            hours: result
-          })
-        }
-      )
     fetch('http://localhost:3001/features')
       .then(res => res.json())
       .then(

@@ -43,6 +43,9 @@ export default function Search() {
     super(props);
     console.log('search props')
     console.log(this.props.searchObj);
+    this.state = {
+      
+    }
   }
 
   // async componentDidMount() {

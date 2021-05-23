@@ -2,7 +2,7 @@ import styles from './layout.module.css';
 import Navigation from './navigation';
 import Link from 'next/link'; 
 
-export const siteTitle = 'Miami Happy Hour Finder'
+export const siteTitle = 'Tipsy Miami'
 
 export default function Layout({ children, home }) {
     return (

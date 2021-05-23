@@ -20,6 +20,44 @@ export default class FilterBox extends Component {
             endTime: '',
             features: ''
         }
+
+        this.options = {
+            "days": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "hours": [
+                "1am",
+                "2am",
+                "3am",
+                "4am",
+                "5am",
+                "6am",
+                "7am",
+                "8am",
+                "9am",
+                "10am",
+                "11am",
+                "12am",
+                "1pm",
+                "2pm",
+                "3pm",
+                "4pm",
+                "5pm",
+                "6pm",
+                "7pm",
+                "8pm",
+                "9pm",
+                "10pm",
+                "11pm",
+                "12pm"
+            ]
+        }
          
         // this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -86,22 +124,16 @@ export default class FilterBox extends Component {
                             <FormControl className={styles.selector}>
                                 <InputLabel>Day</InputLabel>
                                 <Select defaultValue="" name="day" onChange={this.handleInputChange}>
-                                    {this.getMenuItems(this.props.inputs.days)}
+                                    {this.getMenuItems(this.options.days)}
                                 </Select>
                             </FormControl>
                         </div>
                         <div className={styles.menus_row}>
                             <div className={styles.timebox}>
-                                <FormControl className={styles.time_selector}>
-                                    <InputLabel>Start</InputLabel>
-                                    <Select defaultValue="" name="startTime" onChange={this.handleInputChange}>
-                                        {this.getMenuItems(this.props.inputs.hours)}
-                                    </Select>
-                                </FormControl>
-                                <FormControl className={styles.time_selector}>
-                                    <InputLabel>End</InputLabel>
-                                    <Select defaultValue="" name="endTime" onChange={this.handleInputChange}>
-                                        {this.getMenuItems(this.props.inputs.hours)}
+                                <FormControl className={styles.selector}>
+                                    <InputLabel>Time</InputLabel>
+                                    <Select defaultValue="" name="Time" onChange={this.handleInputChange}>
+                                        {this.getMenuItems(this.options.hours)}
                                     </Select>
                                 </FormControl>
                             </div>
